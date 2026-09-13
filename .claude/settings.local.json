@@ -37,7 +37,15 @@
       "PowerShell(New-Item -ItemType Directory -Force -Path C:\\\\temp | Out-Null; $env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; git show HEAD:app/page.tsx > C:\\\\temp\\\\page_orig.tsx 2>&1; $exit = $LASTEXITCODE; Write-Host \"exit=$exit\"; if \\($exit -eq 0\\) { Write-Host \"RECUPERADO com sucesso\"; Get-Content C:\\\\temp\\\\page_orig.tsx -TotalCount 10 } else { Write-Host \"FALHOU\"; Get-Content C:\\\\temp\\\\page_orig.tsx -TotalCount 10 })",
       "PowerShell($lines = Get-Content C:\\\\temp\\\\page_orig.tsx; $total = $lines.Count; Write-Host \"Total linhas no git: $total\"; $clean = $lines | Select-Object -First $total; $clean | Set-Content -Path app\\\\page.tsx -Encoding UTF8; $check = Get-Content app\\\\page.tsx; Write-Host \"Restaurado: $\\($check.Count\\) linhas\"; $check | Select-Object -Last 5)",
       "PowerShell($lines = Get-Content C:\\\\temp\\\\page_orig.tsx; for \\($i = 185; $i -lt $lines.Count; $i++\\) { Write-Host \"$i`: $\\($lines[$i]\\)\" })",
-      "PowerShell($lines = Get-Content C:\\\\temp\\\\page_orig.tsx; $clean = $lines | Select-Object -First 190; $clean | Set-Content -Path app\\\\page.tsx -Encoding UTF8; Write-Host \"Restaurado $\\($clean.Count\\) linhas\"; Get-Content app\\\\page.tsx -Tail 6)"
+      "PowerShell($lines = Get-Content C:\\\\temp\\\\page_orig.tsx; $clean = $lines | Select-Object -First 190; $clean | Set-Content -Path app\\\\page.tsx -Encoding UTF8; Write-Host \"Restaurado $\\($clean.Count\\) linhas\"; Get-Content app\\\\page.tsx -Tail 6)",
+      "PowerShell(git rm --cached -r node_modules; echo \"node_modules/\" >> .gitignore; git add .gitignore; git commit -m \"remove node_modules from index\")",
+      "Bash(sed -i 's|\"../../lib/auth\"|\"../../../lib/auth\"|g' app/admin/login/page.tsx app/admin/page.tsx; grep -n \"lib/auth\" app/admin/login/page.tsx app/admin/page.tsx)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\matee\\Downloads\\jbprado\\app\\admin\\login"
     ]
   }
 }
