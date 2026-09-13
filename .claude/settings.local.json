@@ -42,7 +42,10 @@
       "Bash(sed -i 's|\"../../lib/auth\"|\"../../../lib/auth\"|g' app/admin/login/page.tsx app/admin/page.tsx; grep -n \"lib/auth\" app/admin/login/page.tsx app/admin/page.tsx)",
       "Bash(git add *)",
       "Bash(git commit *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git rm *)",
+      "Bash(git filter-branch *)",
+      "Bash(FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --force --index-filter \"git rm --cached --ignore-unmatch node_modules/@next/swc-win32-x64-msvc/next-swc.win32-x64-msvc.node\" --prune-empty --tag-name-filter cat -- --all)"
     ],
     "additionalDirectories": [
       "C:\\Users\\matee\\Downloads\\jbprado\\app\\admin\\login"
