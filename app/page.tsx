@@ -1,4 +1,4 @@
-import Simulador from "./components/Simulador";
+﻿import Simulador from "./components/Simulador";
 import { ArrowRight, Zap, Sun } from "lucide-react";
 
 export default function HomePage() {
@@ -188,6 +188,3 @@ export default function HomePage() {
       </a>
     </main>
   );
-}
-#   t o u c h  
- 
