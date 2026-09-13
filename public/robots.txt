@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jbpradopostepadrao.com.br/sitemap.xml

@@ -1,0 +1,37 @@
+{
+  "env": {
+    "ANTHROPIC_BASE_URL": "http://localhost:20128",
+    "ANTHROPIC_AUTH_TOKEN": "sk-c5151706c223e5ee-337edd-06ca8cad",
+    "ANTHROPIC_MODEL": "combo/modelos-gratuitos"
+  },
+  "permissions": {
+    "allow": [
+      "PowerShell(npx prisma migrate dev --name init --skip-generate)",
+      "PowerShell(npm install --save-dev prisma)",
+      "PowerShell(npx prisma --version)",
+      "PowerShell(npx prisma migration create --name init)",
+      "PowerShell(node -e \"const { PrismaClient } = require\\('@prisma/client'\\); console.log\\('Prisma client ok'\\);\")",
+      "PowerShell(npm uninstall prisma)",
+      "PowerShell(npm install prisma@5.19.0 --save-dev)",
+      "PowerShell($env:DATABASE_URL=\"postgresql://postgres:710233333Mateus@db.ucnnxsspqoletsutfjav.supabase.co:5432/postgres\"; npx prisma migrate dev --name init --skip-generate)",
+      "PowerShell($env:DATABASE_URL=\"postgresql://postgres:71023333Mateus.@db.ucnnxsspqoletsutfjav.supabase.co:5432/postgres\"; npx prisma migrate dev --name init --skip-generate)",
+      "PowerShell(npm run db:seed)",
+      "PowerShell(npx tsx prisma/seed.ts)",
+      "PowerShell(npx prisma generate)",
+      "PowerShell(npm reinstall @prisma/client)",
+      "PowerShell(npm uninstall @prisma/client)",
+      "PowerShell(npm install @prisma/client)",
+      "PowerShell(npm install ts-node)",
+      "PowerShell(npx ts-node --transpile-only prisma/seed.ts)",
+      "PowerShell(echo \"Verificando banco...\"; $env:DATABASE_URL=\"postgresql://postgres:71023333Mateus.@db.ucnnxsspqoletsutfjav.supabase.co:5432/postgres\"; npx prisma db pull --print 2>&1 | head -20)",
+      "PowerShell($env:DATABASE_URL=\"postgresql://postgres:71023333Mateus.@db.ucnnxsspqoletsutfjav.supabase.co:5432/postgres\"; npx prisma db pull)",
+      "PowerShell($env:DATABASE_URL=\"postgresql://postgres:71023333Mateus.@db.ucnnxsspqoletsutfjav.supabase.co:5432/postgres\"; npx prisma generate)",
+      "PowerShell(node -e \"const {PrismaClient}=require\\('@prisma/client'\\);const p=new PrismaClient\\(\\);\\(async\\(\\)=>{try{await p.product.create\\({data:{name:'Teste',category:'teste',cost:100,price:200,quantity:10,minQuantity:1}}\\);console.log\\('Seed OK via client'\\);}catch\\(e\\){console.error\\(e\\);}finally{await p.$disconnect\\(\\);}}\\)\\(\\);\")",
+      "PowerShell(node seed-final.js)",
+      "PowerShell($env:DATABASE_URL=\"postgresql://postgres:71023333Mateus.@db.ucnnxsspqoletsutfjav.supabase.co:5432/postgres\"; node seed-final.js)",
+      "PowerShell(npm run build)",
+      "PowerShell(npm install tailwindcss@3.4.0 postcss autoprefixer)",
+      "PowerShell(head -10)"
+    ]
+  }
+}
