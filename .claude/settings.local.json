@@ -31,7 +31,13 @@
       "PowerShell($env:DATABASE_URL=\"postgresql://postgres:71023333Mateus.@db.ucnnxsspqoletsutfjav.supabase.co:5432/postgres\"; node seed-final.js)",
       "PowerShell(npm run build)",
       "PowerShell(npm install tailwindcss@3.4.0 postcss autoprefixer)",
-      "PowerShell(head -10)"
+      "PowerShell(head -10)",
+      "PowerShell(Get-Command git -ErrorAction SilentlyContinue)",
+      "PowerShell($env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; git --version; git show HEAD:app/page.tsx > C:\\\\temp\\\\page_orig.tsx 2>&1; $exit = $LASTEXITCODE; Write-Host \"exit=$exit\"; if \\($exit -eq 0\\) { Write-Host \"RECUPERADO\"; Get-Content C:\\\\temp\\\\page_orig.tsx -TotalCount 5 } else { Write-Host \"FALHOU\"; Get-Content C:\\\\temp\\\\page_orig.tsx -TotalCount 10 })",
+      "PowerShell(New-Item -ItemType Directory -Force -Path C:\\\\temp | Out-Null; $env:PATH += \";C:\\\\Program Files\\\\Git\\\\bin\"; git show HEAD:app/page.tsx > C:\\\\temp\\\\page_orig.tsx 2>&1; $exit = $LASTEXITCODE; Write-Host \"exit=$exit\"; if \\($exit -eq 0\\) { Write-Host \"RECUPERADO com sucesso\"; Get-Content C:\\\\temp\\\\page_orig.tsx -TotalCount 10 } else { Write-Host \"FALHOU\"; Get-Content C:\\\\temp\\\\page_orig.tsx -TotalCount 10 })",
+      "PowerShell($lines = Get-Content C:\\\\temp\\\\page_orig.tsx; $total = $lines.Count; Write-Host \"Total linhas no git: $total\"; $clean = $lines | Select-Object -First $total; $clean | Set-Content -Path app\\\\page.tsx -Encoding UTF8; $check = Get-Content app\\\\page.tsx; Write-Host \"Restaurado: $\\($check.Count\\) linhas\"; $check | Select-Object -Last 5)",
+      "PowerShell($lines = Get-Content C:\\\\temp\\\\page_orig.tsx; for \\($i = 185; $i -lt $lines.Count; $i++\\) { Write-Host \"$i`: $\\($lines[$i]\\)\" })",
+      "PowerShell($lines = Get-Content C:\\\\temp\\\\page_orig.tsx; $clean = $lines | Select-Object -First 190; $clean | Set-Content -Path app\\\\page.tsx -Encoding UTF8; Write-Host \"Restaurado $\\($clean.Count\\) linhas\"; Get-Content app\\\\page.tsx -Tail 6)"
     ]
   }
 }
