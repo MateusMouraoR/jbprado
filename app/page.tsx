@@ -1,6 +1,8 @@
 import { ArrowRight, Zap, Sun, Wrench, MapPin, Phone } from "lucide-react";
 import ProdutoGrid from "./components/ProdutoGrid";
 import ContactForm from "./components/ContactForm";
+import ContactForm from "./components/ContactForm";
+import ProdutoGrid from "./components/ProdutoGrid";
 
 export default function HomePage() {
   return (
@@ -33,17 +35,7 @@ export default function HomePage() {
               </a>
             </div>
           </div>
-          <div className="lg:col-span-5 hidden lg:block relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-jb-yellow/10 border border-white/[0.08] rotate-1 hover:rotate-0 transition duration-700">
-              <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
-                <div className="flex items-center gap-3 text-sm font-semibold text-white/90">
-                  <Wrench size={18} className="text-jb-yellow" /> Instalação técnica certificada em Atibaia-SP
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+          </section>
 
       {/* Estatísticas: número grande + legenda pequena — prova social real */}
       <section className="py-24 bg-jb-ink border-y border-white/[0.06]">
@@ -80,38 +72,7 @@ export default function HomePage() {
             <p className="text-stone/70 text-lg md:text-xl mt-4 max-w-2xl leading-relaxed">Poste padrão de alta resistência e sistemas solares completos. Cada item é especificado como ficha técnica industrial.</p>
           </header>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
-            <article className="group relative bg-jb-ink rounded-3xl overflow-hidden border border-white/[0.08] hover:border-jb-yellow/30 transition shadow-xl shadow-black/20">
-              <div className="relative h-72 md:h-80 overflow-hidden">
-                <img src="/produtos/poste-padrao-caixa-acrilico/4d85d750-e549-43cd-9321-6099384e8477.jpg" alt="Poste Padrão" className="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" />
-                <div className="absolute top-4 left-4 px-3 py-1 bg-jb-yellow text-jb-black text-xs font-extrabold rounded-md shadow-lg">POSTE PADRÃO</div>
-              </div>
-              <div className="p-8 md:p-10">
-                <h3 className="font-display text-3xl md:text-4xl font-black mb-4 tracking-tight">Poste de Energia Padrão</h3>
-                <p className="text-stone/80 leading-relaxed mb-6">Poste de concreto armado, resistente à intempérie, com instalação completa de fiação e aterramento conforme normas técnicas ABNT. Ideal para ligações residenciais e comerciais.</p>
-                <ul className="flex flex-wrap gap-2 mb-8">
-                  {["Concreto armado", "Aterramento", "Norma ABNT"].map(t => (
-                    <li key={t} className="text-xs font-semibold px-3 py-1 rounded-full bg-white/[0.06] text-stone/70 border border-white/[0.08]">{t}</li>
-                  ))}
-                </ul>
-                <a href="#contato" className="inline-flex items-center gap-2 text-jb-yellow font-extrabold hover:text-amber-300 transition focus:outline-none focus:ring-2 focus:ring-jb-yellow/40 rounded-lg px-2 -mx-2">Solicitar orçamento <ArrowRight size={18} /></a>
-              </div>
-            </article>
-            <article className="group relative bg-jb-ink rounded-3xl overflow-hidden border border-white/[0.08] hover:border-jb-red/30 transition shadow-xl shadow-black/20">
-              <div className="relative h-72 md:h-80 overflow-hidden">
-                <img src="/produtos/poste-padrao-trifasico-t2/398c056c-7777-4b86-b7e3-6e2f8f4e6e2a.png" alt="Painel Solar" className="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" />
-                <div className="absolute top-4 left-4 px-3 py-1 bg-jb-red text-white text-xs font-extrabold rounded-md shadow-lg">ENERGIA SOLAR</div>
-              </div>
-              <div className="p-8 md:p-10">
-                <h3 className="font-display text-3xl md:text-4xl font-black mb-4 tracking-tight">Painel Solar Completo</h3>
-                <p className="text-stone/80 leading-relaxed mb-6">Kit solar com inversor, estrutura de fixação e instalação profissional. Reduza até 95% da sua conta de energia com garantia de 25 anos nos componentes.</p>
-                <ul className="flex flex-wrap gap-2 mb-8">
-                  {["Inversor incluso", "Garantia 25 anos", "Até 95% economia"].map(t => (
-                    <li key={t} className="text-xs font-semibold px-3 py-1 rounded-full bg-white/[0.06] text-stone/70 border border-white/[0.08]">{t}</li>
-                  ))}
-                </ul>
-                <a href="#contato" className="inline-flex items-center gap-2 text-jb-red font-extrabold hover:text-red-400 transition focus:outline-none focus:ring-2 focus:ring-jb-red/40 rounded-lg px-2 -mx-2">Solicitar orçamento <ArrowRight size={18} /></a>
-              </div>
-            </article>
+          <ProdutoGrid />
           </div>
         </div>
       </section>
@@ -205,7 +166,7 @@ export default function HomePage() {
               </div>
             </a>
             <div className="flex-1 min-h-[320px] bg-black rounded-3xl overflow-hidden border border-white/[0.08] shadow-2xl shadow-black/20 relative">
-              <iframe title="Mapa Atibaia" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.332!2d-46.5485!3d-23.1221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf05e2b57e1e47%3A0x1a23c8cfb8b5f8b3!2sRod.+Fern%C3%A3o+Dias%2C+Km+50+-+Bairro+do+Port%C3%A3o%2C+Atibaia+-+SP%2C+12948-128!5e0!3m2!1spt-BR!2sbr!4v1717000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" />
+              <iframe title="Mapa Atibaia" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.332!2d-46.5485!3d-23.1221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf05e2b57e1e47%3A0x1a23c8cfb8b5f8b3!2sRod.+Fern%C3%A3o+Dias%2C+Atibaia+-+SP!5e0!3m2!1spt-BR!2sbr!4v1717000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" />
               <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur px-4 py-2 rounded-xl border border-white/10 text-sm font-medium text-white shadow-xl"><MapPin size={16} className="inline mr-2 text-jb-yellow" />Atibaia, SP</div>
             </div>
           </div>
