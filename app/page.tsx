@@ -1,4 +1,6 @@
 import { ArrowRight, Zap, Sun, Wrench, MapPin, Phone } from "lucide-react";
+import ProdutoGrid from "./components/ProdutoGrid";
+import ContactForm from "./components/ContactForm";
 
 export default function HomePage() {
   return (
@@ -190,27 +192,7 @@ export default function HomePage() {
             <h2 className="font-display text-4xl md:text-6xl font-black tracking-tight mb-6">Entre em contato</h2>
             <p className="text-sm text-white/60 mb-2">📍 Rod. Fernão Dias, Km 50 - Bairro do Portão, Atibaia - SP, 12948-128</p>
             <p className="text-lg text-stone/80 leading-relaxed mb-10">Solicite um orçamento ou fale diretamente pelo WhatsApp. Respondemos em até 2 horas úteis, com proposta técnica detalhada.</p>
-            <form onSubmit={e => { e.preventDefault(); alert("Mensagem enviada! Nossa equipe entrará em contato em breve."); }} className="space-y-5" aria-label="Formulário de contato">
-              <div className="grid md:grid-cols-2 gap-5">
-                <div>
-                  <label htmlFor="nome" className="sr-only">Nome</label>
-                  <input id="nome" placeholder="Nome" required className="w-full px-5 py-4 rounded-2xl bg-black/60 border border-white/10 focus:outline-none focus:border-jb-yellow focus:ring-2 focus:ring-jb-yellow/20 text-white placeholder:text-stone/40 text-base transition" />
-                </div>
-                <div>
-                  <label htmlFor="telefone" className="sr-only">Telefone</label>
-                  <input id="telefone" placeholder="Telefone" required className="w-full px-5 py-4 rounded-2xl bg-black/60 border border-white/10 focus:outline-none focus:border-jb-yellow focus:ring-2 focus:ring-jb-yellow/20 text-white placeholder:text-stone/40 text-base transition" />
-                </div>
-              </div>
-              <div>
-                <label htmlFor="email" className="sr-only">Email</label>
-                <input id="email" type="email" placeholder="Email" required className="w-full px-5 py-4 rounded-2xl bg-black/60 border border-white/10 focus:outline-none focus:border-jb-yellow focus:ring-2 focus:ring-jb-yellow/20 text-white placeholder:text-stone/40 text-base transition" />
-              </div>
-              <div>
-                <label htmlFor="mensagem" className="sr-only">Mensagem / Orçamento desejado</label>
-                <textarea id="mensagem" placeholder="Mensagem / Orçamento desejado" rows={4} required className="w-full px-5 py-4 rounded-2xl bg-black/60 border border-white/10 focus:outline-none focus:border-jb-yellow focus:ring-2 focus:ring-jb-yellow/20 text-white placeholder:text-stone/40 text-base transition resize-y" />
-              </div>
-              <button type="submit" className="w-full md:w-auto md:min-w-[16rem] py-4 bg-jb-yellow text-jb-black rounded-2xl font-extrabold text-base hover:bg-amber-300 hover:scale-[1.02] transition shadow-[0_0_40px_-12px_rgba(255,193,7,0.55)] focus:outline-none focus:ring-4 focus:ring-jb-yellow/30">Enviar mensagem</button>
-            </form>
+            <ContactForm />
           </div>
           <div className="lg:col-span-5 flex flex-col gap-8">
             <a href="https://wa.me/5511954329628" aria-label="WhatsApp" className="flex items-center gap-5 p-7 bg-gradient-to-r from-[#1B5E20] to-[#2E7D32] rounded-3xl border border-white/5 shadow-2xl shadow-black/20 hover:brightness-110 transition focus:outline-none focus:ring-4 focus:ring-green-500/40">
