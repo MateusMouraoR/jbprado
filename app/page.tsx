@@ -33,7 +33,7 @@ export default function HomePage() {
           </div>
           <div className="lg:col-span-5 hidden lg:block relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-jb-yellow/10 border border-white/[0.08] rotate-1 hover:rotate-0 transition duration-700">
-              <img src="https://images.unsplash.com/photo-1518770660439-4636500cff5f?w=800&q=80" alt="Poste e Painel Solar" className="w-full h-auto object-cover scale-105 hover:scale-110 transition duration-700" />
+              <img src="/hero-poste.jpg" alt="Poste e Painel Solar" className="w-full h-auto object-cover scale-105 hover:scale-110 transition duration-700" />
               <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
                 <div className="flex items-center gap-3 text-sm font-semibold text-white/90">
                   <Wrench size={18} className="text-jb-yellow" /> Instalação técnica certificada em Atibaia-SP
@@ -240,7 +240,7 @@ export default function HomePage() {
       </footer>
 
       {/* WhatsApp flutuante — verde sólido, sombra forte */}
-      <a href="https://wa.me/5511954329628" aria-label="WhatsApp" className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-[0_0_30px_rgba(37,211,102,0.7)] transition hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-[#25D366]/40" title="Falar pelo WhatsApp">
+      <a href="https://wa.me/5511954329628" aria-label="WhatsApp" className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-[0_0_30px_rgba(37,211,102,0.7)] transition hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-[#25D366]/40" title="Falar pelo WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" width={28} height={28} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>
       </a>
     </main>
