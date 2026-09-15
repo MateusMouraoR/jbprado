@@ -45,7 +45,19 @@
       "Bash(git push *)",
       "Bash(git rm *)",
       "Bash(git filter-branch *)",
-      "Bash(FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --force --index-filter \"git rm --cached --ignore-unmatch node_modules/@next/swc-win32-x64-msvc/next-swc.win32-x64-msvc.node\" --prune-empty --tag-name-filter cat -- --all)"
+      "Bash(FILTER_BRANCH_SQUELCH_WARNING=1 git filter-branch --force --index-filter \"git rm --cached --ignore-unmatch node_modules/@next/swc-win32-x64-msvc/next-swc.win32-x64-msvc.node\" --prune-empty --tag-name-filter cat -- --all)",
+      "Bash(grep -n '\"@\\\\/*\"' tsconfig.json)",
+      "Bash(npm run *)",
+      "Bash(echo \"import dynamic from 'next/dynamic'; const Simulador = dynamic\\(\\(\\) => import\\('./components/Simulador'\\), { ssr: false }\\);\")",
+      "Bash(sed -i '1s/^/import dynamic from \"next\\\\/dynamic\";\\\\nconst Simulador = dynamic\\(\\(\\) => import\\(\".\\\\/components\\\\/Simulador\"\\), { ssr: false }\\);\\\\n/' app/page.tsx)",
+      "Bash(sed -i '/import Simulador/d' app/page.tsx)",
+      "Bash(sed -i '1,2d' app/page.tsx)",
+      "Bash(sed -i '1i import SimuladorLoader from \"./components/SimuladorLoader\";' app/page.tsx)",
+      "Bash(sed -i 's/<Simulador \\\\/>/<SimuladorLoader \\\\/>/g' app/page.tsx)",
+      "Bash(tee app/components/SimuladorLoader.tsx)",
+      "Bash(sed -i '73d' app/page.tsx)",
+      "Bash(sed -i '1d' app/page.tsx)",
+      "Bash(node -e \"const p=require\\('./package.json'\\); p.scripts.postinstall='prisma generate'; p.scripts.build='prisma generate && next build'; if\\(p.devDependencies&&p.devDependencies.prisma\\){p.dependencies=p.dependencies||{};p.dependencies.prisma=p.devDependencies.prisma;delete p.devDependencies.prisma;} require\\('fs'\\).writeFileSync\\('package.json',JSON.stringify\\(p,null,2\\)\\); console.log\\('atualizado'\\);\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\matee\\Downloads\\jbprado\\app\\admin\\login"
