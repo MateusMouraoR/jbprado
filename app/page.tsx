@@ -7,7 +7,7 @@ export default function HomePage() {
       {/* Hero: editorial com foto, selo, título pesado, CTA duplo */}
       <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-gradient-to-b from-[#0E0E0E] via-[#121212] to-[#0A0A0A]">
         <div className="absolute inset-0" aria-hidden>
-          <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1600&q=80" alt="" className="w-full h-full object-cover opacity-20 mix-blend-overlay" />
+          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&q=80&auto=format&fit=crop" alt="" className="w-full h-full object-cover opacity-20 mix-blend-overlay" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/70 to-transparent" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-28 lg:py-36 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
@@ -200,13 +200,13 @@ export default function HomePage() {
               </div>
               <div>
                 <p className="font-extrabold text-lg">WhatsApp — Canal principal</p>
-                <p className="text-sm text-white/80 font-medium">(11) 99999-9999</p>
+                <p className="text-sm text-white/80 font-medium">(11) 95432-9628</p>
                 <p className="text-xs text-white/60 mt-1">Resposta em até 2h úteis</p>
               </div>
             </a>
             <div className="flex-1 min-h-[320px] bg-black rounded-3xl overflow-hidden border border-white/[0.08] shadow-2xl shadow-black/20 relative">
               <iframe title="Mapa JB Prado — Rod. Fernão Dias, Km 50 - Portão, Atibaia - SP" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.332!2d-46.5485!3d-23.1221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf05e2b57e1e47%3A0x1a23c8cfb8b5f8b3!2sRodovia+Fern%C3%A3o+Dias%2C+Km+50+-+Port%C3%A3o%2C+Atibaia+-+SP%2C+12948-128!5e0!3m2!1spt-BR!2sbr!4v1717000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" />
-              <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur px-4 py-2 rounded-xl border border-white/10 text-sm font-medium text-white shadow-xl"><MapPin size={16} className="inline mr-2 text-jb-yellow" />Atibaia, SP</div>
+              <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur px-4 py-2 rounded-xl border border-white/10 text-sm font-medium text-white shadow-xl"><MapPin size={16} className="inline mr-2 text-jb-yellow" />Rod. Fernão Dias, Km 50 — Portão, Atibaia-SP</div>
             </div>
           </div>
         </div>
