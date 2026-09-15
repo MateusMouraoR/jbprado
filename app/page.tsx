@@ -8,7 +8,7 @@ export default function HomePage() {
       {/* Hero: editorial com foto, selo, título pesado, CTA duplo */}
       <section className="relative min-h-[92vh] flex items-center overflow-hidden bg-gradient-to-b from-[#0E0E0E] via-[#121212] to-[#0A0A0A]">
         <div className="absolute inset-0" aria-hidden>
-          <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&q=80&auto=format&fit=crop" alt="" className="w-full h-full object-cover opacity-20 mix-blend-overlay" />
+          <img src="/produtos/poste-padrao-duplo-bifasico/328f02e2-364d-4802-919d-0be476355c97.png" alt="" className="w-full h-full object-cover opacity-20 mix-blend-overlay" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A] via-[#0A0A0A]/70 to-transparent" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 md:px-10 py-28 lg:py-36 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
@@ -35,7 +35,7 @@ export default function HomePage() {
           </div>
           <div className="lg:col-span-5 hidden lg:block relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-jb-yellow/10 border border-white/[0.08] rotate-1 hover:rotate-0 transition duration-700">
-              <img src="https://images.unsplash.com/photo-1518770660439-4636500cff5f?w=800&q=80" alt="Poste e Painel Solar" className="w-full h-auto object-cover scale-105 hover:scale-110 transition duration-700" />
+              <img src="/produtos/poste-padrao-caixa-acrilico/4d85d750-e549-43cd-9321-6099384e8477.jpg" alt="Poste e Painel Solar" className="w-full h-auto object-cover scale-105 hover:scale-110 transition duration-700" />
               <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
                 <div className="flex items-center gap-3 text-sm font-semibold text-white/90">
                   <Wrench size={18} className="text-jb-yellow" /> Instalação técnica certificada em Atibaia-SP
@@ -84,7 +84,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             <article className="group relative bg-jb-ink rounded-3xl overflow-hidden border border-white/[0.08] hover:border-jb-yellow/30 transition shadow-xl shadow-black/20">
               <div className="relative h-72 md:h-80 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1518770660439-4636500cff5f?w=800&q=80" alt="Poste Padrão" className="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" />
+                <img src="/produtos/poste-padrao-caixa-acrilico/4d85d750-e549-43cd-9321-6099384e8477.jpg" alt="Poste Padrão" className="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" />
                 <div className="absolute top-4 left-4 px-3 py-1 bg-jb-yellow text-jb-black text-xs font-extrabold rounded-md shadow-lg">POSTE PADRÃO</div>
               </div>
               <div className="p-8 md:p-10">
