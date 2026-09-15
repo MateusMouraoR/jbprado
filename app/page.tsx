@@ -35,7 +35,6 @@ export default function HomePage() {
           </div>
           <div className="lg:col-span-5 hidden lg:block relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl shadow-jb-yellow/10 border border-white/[0.08] rotate-1 hover:rotate-0 transition duration-700">
-              <img src="/hero-poste.jpg" alt="Poste e Painel Solar" className="w-full h-auto object-cover scale-105 hover:scale-110 transition duration-700" />
               <div className="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/90 via-black/40 to-transparent">
                 <div className="flex items-center gap-3 text-sm font-semibold text-white/90">
                   <Wrench size={18} className="text-jb-yellow" /> Instalação técnica certificada em Atibaia-SP
@@ -83,7 +82,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             <article className="group relative bg-jb-ink rounded-3xl overflow-hidden border border-white/[0.08] hover:border-jb-yellow/30 transition shadow-xl shadow-black/20">
               <div className="relative h-72 md:h-80 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1518770660439-4636500cff5f?w=800&q=80" alt="Poste Padrão" className="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" />
+                <img src="/produtos/poste-padrao-caixa-acrilico/4d85d750-e549-43cd-9321-6099384e8477.jpg" alt="Poste Padrão" className="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" />
                 <div className="absolute top-4 left-4 px-3 py-1 bg-jb-yellow text-jb-black text-xs font-extrabold rounded-md shadow-lg">POSTE PADRÃO</div>
               </div>
               <div className="p-8 md:p-10">
@@ -99,7 +98,7 @@ export default function HomePage() {
             </article>
             <article className="group relative bg-jb-ink rounded-3xl overflow-hidden border border-white/[0.08] hover:border-jb-red/30 transition shadow-xl shadow-black/20">
               <div className="relative h-72 md:h-80 overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80" alt="Painel Solar" className="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" />
+                <img src="/produtos/poste-padrao-trifasico-t2/398c056c-7777-4b86-b7e3-6e2f8f4e6e2a.png" alt="Painel Solar" className="w-full h-full object-cover group-hover:scale-[1.03] transition duration-700" />
                 <div className="absolute top-4 left-4 px-3 py-1 bg-jb-red text-white text-xs font-extrabold rounded-md shadow-lg">ENERGIA SOLAR</div>
               </div>
               <div className="p-8 md:p-10">
@@ -206,7 +205,7 @@ export default function HomePage() {
               </div>
             </a>
             <div className="flex-1 min-h-[320px] bg-black rounded-3xl overflow-hidden border border-white/[0.08] shadow-2xl shadow-black/20 relative">
-              <iframe title="Mapa Atibaia" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.332!2d-46.5485!3d-23.1221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf05e2b57e1e47%3A0x1a23c8cfb8b5f8b3!2sAtibaia%2C%20SP!5e0!3m2!1spt-BR!2sbr!4v1717000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" />
+              <iframe title="Mapa Atibaia" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.332!2d-46.5485!3d-23.1221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf05e2b57e1e47%3A0x1a23c8cfb8b5f8b3!2sRod.+Fern%C3%A3o+Dias%2C+Km+50+-+Bairro+do+Port%C3%A3o%2C+Atibaia+-+SP%2C+12948-128!5e0!3m2!1spt-BR!2sbr!4v1717000000000!5m2!1spt-BR!2sbr" width="100%" height="100%" style={{ border: 0 }} allowFullScreen loading="lazy" />
               <div className="absolute bottom-4 left-4 bg-black/80 backdrop-blur px-4 py-2 rounded-xl border border-white/10 text-sm font-medium text-white shadow-xl"><MapPin size={16} className="inline mr-2 text-jb-yellow" />Atibaia, SP</div>
             </div>
           </div>
@@ -222,7 +221,7 @@ export default function HomePage() {
       </footer>
 
       {/* WhatsApp flutuante — verde sólido, sombra forte */}
-      <a href="https://wa.me/5511954329628" aria-label="WhatsApp" className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-[0_0_30px_rgba(37,211,102,0.7)] transition hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-[#25D366]/40" title="Falar pelo WhatsApp">
+      <a href="https://wa.me/5511954329628" aria-label="WhatsApp" className="fixed bottom-6 right-6 z-50 bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-[0_0_30px_rgba(37,211,102,0.7)] transition hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-[#25D366]/40" title="Falar pelo WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" width={28} height={28} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /></svg>
       </a>
     </main>
