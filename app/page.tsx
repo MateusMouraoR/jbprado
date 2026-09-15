@@ -1,4 +1,5 @@
 import { ArrowRight, Zap, Sun, Wrench, MapPin, Phone } from "lucide-react";
+import ProdutoGrid from "./components/ProdutoGrid";
 import ContactForm from "./components/ContactForm";
 
 export default function HomePage() {
@@ -78,6 +79,7 @@ export default function HomePage() {
             <span className="text-jb-yellow font-bold text-sm tracking-widest uppercase mb-3 block">Produtos</span>
             <h2 className="font-display text-4xl md:text-6xl font-black tracking-tight text-balance">Nossos Produtos</h2>
             <p className="text-stone/70 text-lg md:text-xl mt-4 max-w-2xl leading-relaxed">Poste padrão de alta resistência e sistemas solares completos. Cada item é especificado como ficha técnica industrial.</p>
+          <ProdutoGrid />
           </header>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
             <article className="group relative bg-jb-ink rounded-3xl overflow-hidden border border-white/[0.08] hover:border-jb-yellow/30 transition shadow-xl shadow-black/20">
